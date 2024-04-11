@@ -18,7 +18,7 @@ pennButton.onclick = function() {
     popupContainer.style.display = "none";
   } else {
     popupContainer.style.display = "block";
-    // startermap.flyTo({center: [-70, 41], zoom: 9});;
+    startermap.flyTo({center: [-73.9935, 40.7506], zoom: 16});;
   }
 }
 
