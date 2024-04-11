@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Class 2 Example</title>
+    <title>Assignment 3</title>
     <link rel="stylesheet" href="css-file.css">
 </head>
 
@@ -78,7 +78,7 @@
     <!-- this next section adds the MapBox map -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='css-file' />
-    <div id='startermap'></div>
+    <div id='startermap' class="startermap"></div>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiYW1hbnBhdGVsODAwIiwiYSI6ImNsdXVma3Y2eDA5aTYyaXJ1cG9paWxkeXkifQ.W3N3M_9eewZA6lABLZL3Pw';
         const startermap = new mapboxgl.Map({
@@ -88,10 +88,10 @@
             zoom: 11
         });
         startermap.on('load', function() {
-        const marker1 = new mapboxgl.Marker()
-        .setLngLat([-73.9935, 40.7506])
-        .addTo(startermap); 
-        });
+        const penn = new mapboxgl.Marker()
+            .setLngLat([-73.9935, 40.7506])
+            .addTo(startermap); 
+    });
     </script>
     <!-- this script below is important; I have to remember to add it awlays!!!-->
 <script src="javafile.js"></script>
