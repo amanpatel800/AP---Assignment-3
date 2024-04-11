@@ -1,24 +1,70 @@
-// mapboxgl.accessToken = 'pk.eyJ1IjoiYW1hbnBhdGVsODAwIiwiYSI6ImNsdXVma3Y2eDA5aTYyaXJ1cG9paWxkeXkifQ.W3N3M_9eewZA6lABLZL3Pw';
-//         const startermap = new mapboxgl.Map({
-//             container: 'startermap',
-//             style: 'mapbox://styles/mapbox/navigation-night-v1',
-//             center: [-73.935242, 40.730610],
-//             zoom: 11
-//         })
-// Get the popup container and its content
-var popupContainer = document.getElementById("popupContainer");
-var popupContent = document.getElementById("popupContent");
 
-// Get the Penn Station button
+//button code for Penn Station
+var popupContainerPenn = document.getElementById("popupContainerpenn");
+var popupContentPenn = document.getElementById("popupContentpenn");
 var pennButton = document.getElementById("pennButton");
-
-// When the user clicks the Penn Station button, get to popup to display
 pennButton.onclick = function() {
-  if (popupContainer.style.display === "block") {
-    popupContainer.style.display = "none";
+  if (popupContainerPenn.style.display === "block") {
+    popupContainerPenn.style.display = "none";
   } else {
-    popupContainer.style.display = "block";
+    popupContainerPenn.style.display = "block";
     startermap.flyTo({center: [-73.9935, 40.7506], zoom: 16});;
   }
 }
+
+//button code for fifth Station
+var popupContainerfifth = document.getElementById("popupContainerfifth");
+var popupContentfifth = document.getElementById("popupContentfifth");
+var fifthButton = document.getElementById("fifthButton");
+fifthButton.onclick = function() {
+  if (popupContainerfifth.style.display === "block") {
+    popupContainerfifth.style.display = "none";
+  } else {
+    popupContainerfifth.style.display = "block";
+    startermap.flyTo({center: [-73.97692, 40.75914], zoom: 15});;
+  }
+}
+
+
+//button code for queens Station
+var popupContainerqueens = document.getElementById("popupContainerqueens");
+var popupContentqueens = document.getElementById("popupContentqueens");
+var queensButton = document.getElementById("queensButton");
+queensButton.onclick = function() {
+  if (popupContainerqueens.style.display === "block") {
+    popupContainerqueens.style.display = "none";
+  } else {
+    popupContainerqueens.style.display = "block";
+    startermap.flyTo({center: [-73.92766, 40.76057], zoom: 13});;
+  }
+}
+
+
+//button code for ibx Station
+var popupContainerbqe = document.getElementById("popupContainerbqe");
+var popupContentbqe = document.getElementById("popupContentbqe");
+var ibxButton = document.getElementById("bqeButton");
+ibxButton.onclick = function() {
+  if (popupContainerbqe.style.display === "block") {
+    popupContainerbqe.style.display = "none";
+  } else {
+    popupContainerbqe.style.display = "block";
+    startermap.flyTo({center: [-73.91380, 40.72405], zoom: 12});;
+  }
+}
+
+
+//button code for capstone Station
+var popupContainercap = document.getElementById("popupContainercap");
+var popupContentcap = document.getElementById("popupContentcap");
+var capButton = document.getElementById("capButton");
+capButton.onclick = function() {
+  if (popupContainercap.style.display === "block") {
+    popupContainercap.style.display = "none";
+  } else {
+    popupContainercap.style.display = "block";
+    startermap.flyTo({center: [-74.00859, 40.70829], zoom: 18});;
+  }
+}
+
 

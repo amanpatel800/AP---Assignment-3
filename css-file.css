@@ -36,7 +36,7 @@ h3 {
     bottom: 0;
     width: 15%;
     height: 55vh; 
-    background-color: #f0f0f0;
+    background-color: #f0f0f0e2;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -181,7 +181,7 @@ properly with their animations and designs without breaking each button out into
 .leftsidetab .queens:hover:before {
     height: 100%;
 }
-.leftsidetab .ibx {
+.leftsidetab .bqe {
     font-size: 20px; 
     font-weight: 200;
     letter-spacing: 1px;
@@ -204,13 +204,13 @@ properly with their animations and designs without breaking each button out into
 
 
 @media (min-width: 768px) {
-    .leftsidetab .ibx {
+    .leftsidetab .bqe {
         padding: 20px 60px; 
     }
 }
 
 
-.leftsidetab .ibx:before {
+.leftsidetab .bqe:before {
     content: "";
     background-color: #ffe54c;
     width: 100%;
@@ -223,10 +223,10 @@ properly with their animations and designs without breaking each button out into
 }
 
 
-.leftsidetab .ibx:hover:before {
+.leftsidetab .bqe:hover:before {
     height: 100%;
 }
-.leftsidetab .capstone {
+.leftsidetab .cap {
     font-size: 20px; 
     font-weight: 200;
     letter-spacing: 1px;
@@ -249,13 +249,13 @@ properly with their animations and designs without breaking each button out into
 
 
 @media (min-width: 768px) {
-    .leftsidetab .capstone {
+    .leftsidetab .cap {
         padding: 20px 60px; 
     }
 }
 
 
-.leftsidetab .capstone:before {
+.leftsidetab .cap:before {
     content: "";
     background-color: #ffe54c;
     width: 100%;
@@ -268,7 +268,7 @@ properly with their animations and designs without breaking each button out into
 }
 
 
-.leftsidetab .capstone:hover:before {
+.leftsidetab .cap:hover:before {
     height: 100%;
 }
 
@@ -278,8 +278,8 @@ properly with their animations and designs without breaking each button out into
  
 }
 
-/* Popup container */
-.popup-container {
+/* Penn Popup container */
+.popup-containerpenn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -294,7 +294,85 @@ properly with their animations and designs without breaking each button out into
   }
   
   /* Popup content */
-  .popup-content {
+  .popup-contentpenn {
    font-size: 15px;
   }
+
+  /* fifth Popup container */
+.popup-containerfifth {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
   
+  /* Popup content */
+   .popup-contentfifth {
+   font-size: 15px;
+  }
+
+   /* queens Popup container */
+.popup-containerqueens {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  /* Popup content */
+   .popup-contentqueens {
+   font-size: 15px;
+  }
+   /* ibx Popup container */
+.popup-containerbqe {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  /* Popup content */
+   .popup-contentbqe {
+   font-size: 15px;
+  }
+   /* capstone Popup container */
+
+.popup-containercap {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  /* Popup content */
+   .popup-contentcap {
+   font-size: 15px;
+  }
