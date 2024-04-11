@@ -12,65 +12,67 @@
 <body>
     <h1>Welcome to my journey in New York City!</h1>
     <div class="display-box-title">
-        I wanted to create this map to display some of the projects I've had the opportunity to
-        work on and contribute to during the last two years. I currently work at Public Works Partners
-        , a public consulting firm. My time at the firm is coming to an end as graduate nears. To help
-        me remember the last two years, I've decided to create a map showing the project's I've worked on!
+        I wanted to create this map to display some of the projects I've had the opportunity to 
+        work on and contribute to during the last two years. I currently work at Public Works 
+        Partners, a public consulting firm. My time at the firm is coming to an end as graduation 
+        nears. To help me remember the last two years, I've decided to create a map showing the 
+        projects I've worked on! Click on the buttons on the left side to see my journey.
     </div>
     <div class="leftsidetab">
         <div>
-            <button id="pennButton" class="penn">Penn Station</button>
-            <button id="fifthButton" class="fifth">Future of Fifth</button>
-            <button id="queensButton" class="queens">Queens</button>
-            <button id="bqeButton" class="bqe">Interbourgh Expressway</button>
-            <button id="capButton" class="cap">NYC311</button>
+            <button id="pennButton" class="button">Penn Station</button>
+            <button id="fifthButton" class="button">Future of Fifth</button>
+            <button id="queensButton" class="button">Queens</button>
+            <button id="ibxButton" class="button">Interbourgh Expressway</button>
+            <button id="capButton" class="button">NYC311</button>
         </div>
     </div>
  <!-- Penn Popup container -->
-<div id="popupContainerpenn" class="popup-containerpenn">
-    <div id="popupContentpenn" class="popup-contentpenn">
-      Redesigning Penn Station is a project many within the city are currently working on. My firm has
-      been tasked with aidding in this effort. Though I can't say much since the project is ongoing,
-      it has been truly rewarding work!
+<div id="popupContainerpenn" class="popup-container">
+    <div id="popupContentpenn" class="popup-content">
+        Redesigning Penn Station is a project on which many within the city are currently working. 
+        My firm has been tasked with aiding in this effort. Though I can't say much since the project 
+        is ongoing, it has been truly rewarding work!
     </div>
   </div>
 
   <!-- fifth Popup container -->
-<div id="popupContainerfifth" class="popup-containerfifth">
-    <div id="popupContentfifth" class="popup-contentfifth">
-      Fifth Avenue is being redesigned at last! The project, coined Future of Fifth by the city,
-      has several different components. I helped my firm conduct a zoning anaylsis and gather 
-      and analaze public opinion. This was my first time dealing with zoning laws in the city, 
-      and I found it to be really interesting! Gathering public opinion was rewarding, but challenging.
-      Trying to ask New Yorkers to take a survey during their lunch hour is not a simple task. 
+<div id="popupContainerfifth" class="popup-container">
+    <div id="popupContentfifth" class="popup-content">
+      Fifth Avenue is finally being redesigned! The project, known as the Future of Fifth by the 
+      city, consists of several different components. I assisted my firm in conducting a zoning 
+      analysis and gathering and analyzing public opinion. This was my first time dealing with 
+      zoning laws in the city, and I found it to be truly interesting! Gathering public opinion 
+      was rewarding but challenging. Asking New Yorkers to take a survey during their lunch hour 
+      is no simple task.
     </div>
   </div>
 
 <!-- Queens Popup container -->
-<div id="popupContainerqueens" class="popup-containerqueens">
-    <div id="popupContentqueens" class="popup-contentqueens">
-My work in queens has foucsed on helping the NYCEDC redevelop a station. I cannot provide too many
-details due to the ongoing status of the project; however, what I can say is that this project 
-has served as a very important learning opportunity.
+<div id="popupContainerqueens" class="popup-container">
+    <div id="popupContentqueens" class="popup-content">
+        My work in Queens has focused on assisting the NYCEDC in redeveloping an important 
+        trasit hub. I cannot provide too many details due to the ongoing status of the project; however, 
+        what I can say is that this project has served as a very important learning opportunity.
     </div>
   </div>
 
-<!-- bqe Popup container -->
-<div id="popupContainerbqe" class="popup-containerbqe">
-    <div id="popupContentbqe" class="popup-contentbqe">
-One of my first tasks at my firm was to help develop public materials for the MTA. The one I found 
-most interesting were to segments on the IBX (Interbourgh Expressway) that was recently annouced. This project helped inspire my career 
-in public transit! 
+<!-- ibx Popup container -->
+<div id="popupContaineribx" class="popup-container">
+    <div id="popupContentibx" class="popup-content">
+        One of my first tasks at my firm was to assist in developing public materials for the MTA. 
+        The ones I found most interesting were the segments on the IBX (Interborough Expressway) 
+        that were recently announced. This project helped inspire my career in public transit!
     </div>
   </div>
 
 <!-- capstone Popup container -->
-<div id="popupContainercap" class="popup-containercap">
-    <div id="popupContentcap" class="popup-contentcap">
-For my capstone project, I have been tasked with helping NYC311 develop a 10 year roadmap. Though
-this project is almost done, I can say it has been one of the most fun projects I have worked on.
-I have learned so much about the city through this project, and have a new apperciate for the 
-city government and its efforts. 
+<div id="popupContainercap" class="popup-container">
+    <div id="popupContentcap" class="popup-content">
+        For my capstone project, I have been tasked with helping NYC311 develop a 10-year roadmap. 
+        Though this project is almost done, I can say it has been one of the most enjoyable projects 
+        I have worked on. I have learned so much about the city through this project and have gained 
+        a new appreciation for the city government and its efforts. 
     </div>
   </div>
     <!-- this next section adds the MapBox map -->
@@ -85,7 +87,13 @@ city government and its efforts.
             center: [-73.935242, 40.730610],
             zoom: 11
         });
+        startermap.on('load', function() {
+        const marker1 = new mapboxgl.Marker()
+        .setLngLat([-73.9935, 40.7506])
+        .addTo(startermap); 
+        });
     </script>
+    <!-- this script below is important; I have to remember to add it awlays!!!-->
 <script src="javafile.js"></script>
 </body>
 

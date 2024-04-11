@@ -41,14 +41,14 @@ queensButton.onclick = function() {
 
 
 //button code for ibx Station
-var popupContainerbqe = document.getElementById("popupContainerbqe");
-var popupContentbqe = document.getElementById("popupContentbqe");
-var ibxButton = document.getElementById("bqeButton");
+var popupContaineribx = document.getElementById("popupContaineribx");
+var popupContentibx = document.getElementById("popupContentibx");
+var ibxButton = document.getElementById("ibxButton");
 ibxButton.onclick = function() {
-  if (popupContainerbqe.style.display === "block") {
-    popupContainerbqe.style.display = "none";
+  if (popupContaineribx.style.display === "block") {
+    popupContaineribx.style.display = "none";
   } else {
-    popupContainerbqe.style.display = "block";
+    popupContaineribx.style.display = "block";
     startermap.flyTo({center: [-73.91380, 40.72405], zoom: 12});;
   }
 }

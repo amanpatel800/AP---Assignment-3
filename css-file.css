@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.798);
+    background-color: rgba(0, 0, 0, 0.713);
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -43,10 +43,15 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
-/*the following few sections create the buttons and their designs. I could not get them to function
-properly with their animations and designs without breaking each button out into its own element*/
-.leftsidetab .penn {
+#startermap {
+    width: 100%;
+    height: 100vh; 
+}
+
+  /* the code below is the buttons */
+  .leftsidetab .button {
     font-size: 20px; 
     font-weight: 200;
     letter-spacing: 1px;
@@ -70,13 +75,13 @@ properly with their animations and designs without breaking each button out into
 
 
 @media (min-width: 768px) {
-    .leftsidetab .penn {
+    .leftsidetab .button {
         padding: 20px 60px; 
     }
 }
 
 
-.leftsidetab .penn:before {
+.leftsidetab .button:before {
     content: "";
     background-color: #ffe54c;
     width: 100%;
@@ -89,209 +94,17 @@ properly with their animations and designs without breaking each button out into
 }
 
 
-.leftsidetab .penn:hover:before {
+.leftsidetab .button:hover:before {
     height: 100%;
 }
-.leftsidetab .fifth {
-    font-size: 20px; 
-    font-weight: 200;
-    letter-spacing: 1px;
-    width: 83%;
-    padding: 20px 40px; 
-    outline: 0;
-    border: 1px solid black;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start; 
-}
-
-
-@media (min-width: 768px) {
-    .leftsidetab .fifth {
-        padding: 20px 60px; 
-    }
-}
-
-
-.leftsidetab .fifth:before {
-    content: "";
-    background-color: #ffe54c;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 0;
-    bottom: 0;
-    left: 0;
-    transition: height 0.2s ease;
-}
-
-
-.leftsidetab .fifth:hover:before {
-    height: 100%;
-}
-.leftsidetab .queens {
-    font-size: 20px; 
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 20px 40px; 
-    width: 83%;
-    outline: 0;
-    border: 1px solid black;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; 
-}
-
-
-@media (min-width: 768px) {
-    .leftsidetab .queens {
-        padding: 20px 60px; 
-    }
-}
-
-
-.leftsidetab .queens:before {
-    content: "";
-    background-color: #ffe54c;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 0;
-    bottom: 0;
-    left: 0;
-    transition: height 0.2s ease;
-}
-
-
-.leftsidetab .queens:hover:before {
-    height: 100%;
-}
-.leftsidetab .bqe {
-    font-size: 20px; 
-    font-weight: 200;
-    letter-spacing: 1px;
-    width: 83%;
-    padding: 20px 40px; 
-    outline: 0;
-    border: 1px solid black;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start; 
-}
-
-
-@media (min-width: 768px) {
-    .leftsidetab .bqe {
-        padding: 20px 60px; 
-    }
-}
-
-
-.leftsidetab .bqe:before {
-    content: "";
-    background-color: #ffe54c;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 0;
-    bottom: 0;
-    left: 0;
-    transition: height 0.2s ease;
-}
-
-
-.leftsidetab .bqe:hover:before {
-    height: 100%;
-}
-.leftsidetab .cap {
-    font-size: 20px; 
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 20px 40px; 
-    width: 83%;
-    outline: 0;
-    border: 1px solid black;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start; 
-}
-
-
-@media (min-width: 768px) {
-    .leftsidetab .cap {
-        padding: 20px 60px; 
-    }
-}
-
-
-.leftsidetab .cap:before {
-    content: "";
-    background-color: #ffe54c;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 0;
-    bottom: 0;
-    left: 0;
-    transition: height 0.2s ease;
-}
-
-
-.leftsidetab .cap:hover:before {
-    height: 100%;
-}
-
-#startermap {
-    width: 100%;
-    height: 100vh; 
- 
-}
-
-/* Penn Popup container */
-.popup-containerpenn {
+.popup-container {
     display: none;
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -299,85 +112,6 @@ properly with their animations and designs without breaking each button out into
   }
   
   /* Popup content */
-  .popup-contentpenn {
-   font-size: 15px;
-  }
-
-  /* fifth Popup container */
-.popup-containerfifth {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-  }
-  
-  /* Popup content */
-   .popup-contentfifth {
-   font-size: 15px;
-  }
-
-   /* queens Popup container */
-.popup-containerqueens {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-  }
-  
-  /* Popup content */
-   .popup-contentqueens {
-   font-size: 15px;
-  }
-   /* ibx Popup container */
-.popup-containerbqe {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-  }
-  
-  /* Popup content */
-   .popup-contentbqe {
-   font-size: 15px;
-  }
-   /* capstone Popup container */
-
-.popup-containercap {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-  }
-  
-  /* Popup content */
-   .popup-contentcap {
+  .popup-content {
    font-size: 15px;
   }
