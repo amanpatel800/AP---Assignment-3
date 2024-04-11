@@ -8,21 +8,39 @@
     <title>Class 2 Example</title>
     <link rel="stylesheet" href="css-file.css">
 </head>
+
 <body>
-</body>
-<h1>Welcome to my journey in New York City!</h1>
-<div class="display-box-title">
-    I wanted to create this map to display some of the projects I've had the opportunity to
-    work on and contribute to during the last two years. I currently work at Public Works Partners
-    , a public consulting firm. My time at the firm is coming to an end as graduate nears. To help
-    me remember the last two years, I've decided to create a map showing the project's I've worked on! 
-</div>
-<div class="leftsidetab">
-    <div>
-        <button class="penn">Button 1</button>
-        <button class="fifth">Button 2</button>
-        <button class="queens">Button 3</button>
-        <button class="ibx">Button 4</button>
-        <button class="capstone">Button 5</button>
+    <h1>Welcome to my journey in New York City!</h1>
+    <div class="display-box-title">
+        I wanted to create this map to display some of the projects I've had the opportunity to
+        work on and contribute to during the last two years. I currently work at Public Works Partners
+        , a public consulting firm. My time at the firm is coming to an end as graduate nears. To help
+        me remember the last two years, I've decided to create a map showing the project's I've worked on!
     </div>
-</div>
+    <div class="leftsidetab">
+        <div>
+            <button id="pennButton" class="penn">Penn Station</button>
+            <button class="fifth">Button 2</button>
+            <button class="queens">Button 3</button>
+            <button class="ibx">Button 4</button>
+            <button class="capstone">Button 5</button>
+        </div>
+    </div>
+  
+    <!-- this next section adds the MapBox map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='css-file' />
+    <div id='startermap'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYW1hbnBhdGVsODAwIiwiYSI6ImNsdXVma3Y2eDA5aTYyaXJ1cG9paWxkeXkifQ.W3N3M_9eewZA6lABLZL3Pw';
+        const startermap = new mapboxgl.Map({
+            container: 'startermap',
+            style: 'mapbox://styles/mapbox/navigation-night-v1',
+            center: [-73.935242, 40.730610],
+            zoom: 11
+        });
+    </script>
+<script src="javafile.js"></script>
+</body>
+
+</html>
