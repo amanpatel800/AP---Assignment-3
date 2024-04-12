@@ -76,14 +76,14 @@
     </div>
   </div>
     <!-- this next section adds the MapBox map -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='css-file' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='css-file' />
     <div id='startermap' class="startermap"></div>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiYW1hbnBhdGVsODAwIiwiYSI6ImNsdXVma3Y2eDA5aTYyaXJ1cG9paWxkeXkifQ.W3N3M_9eewZA6lABLZL3Pw';
         const startermap = new mapboxgl.Map({
             container: 'startermap',
-            style: 'mapbox://styles/mapbox/navigation-night-v1',
+            style: 'mapbox://styles/mapbox/dark-v11',
             center: [-73.935242, 40.730610],
             zoom: 11
         });
